@@ -1,0 +1,91 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="0%" r="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </radialGradient>
+    <linearGradient id="parachute" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f5deb3"/>
+      <stop offset="50%" style="stop-color:#deb887"/>
+      <stop offset="100%" style="stop-color:#d2b48c"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#deb887"/>
+      <stop offset="100%" style="stop-color:#d2b48c"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Dark background with grid -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+  
+  <!-- Grid pattern at bottom -->
+  <g stroke="#f5deb3" stroke-width="1" opacity="0.3">
+    <defs>
+      <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+        <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#f5deb3" stroke-width="1"/>
+      </pattern>
+    </defs>
+    <rect x="0" y="350" width="512" height="162" fill="url(#grid)"/>
+  </g>
+  
+  <!-- Mountains in background -->
+  <path d="M0 400 Q100 350 200 380 Q300 320 400 360 Q450 340 512 370 L512 512 L0 512 Z" fill="#333" opacity="0.6"/>
+  <path d="M0 420 Q80 380 160 400 Q240 360 320 390 Q400 350 512 380 L512 512 L0 512 Z" fill="#444" opacity="0.4"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="80" cy="80" rx="25" ry="12" fill="#f5deb3" opacity="0.8"/>
+  <ellipse cx="100" cy="75" rx="30" ry="15" fill="#f5deb3" opacity="0.8"/>
+  <ellipse cx="120" cy="80" rx="20" ry="10" fill="#f5deb3" opacity="0.8"/>
+  
+  <ellipse cx="400" cy="60" rx="35" ry="18" fill="#f5deb3" opacity="0.7"/>
+  <ellipse cx="425" cy="55" rx="25" ry="12" fill="#f5deb3" opacity="0.7"/>
+  
+  <ellipse cx="450" cy="120" rx="30" ry="15" fill="#f5deb3" opacity="0.6"/>
+  <ellipse cx="470" cy="115" rx="20" ry="10" fill="#f5deb3" opacity="0.6"/>
+  
+  <!-- Main parachute -->
+  <path d="M256 120 C180 120 120 160 120 210 C120 250 180 280 256 280 C332 280 392 250 392 210 C392 160 332 120 256 120 Z" fill="url(#parachute)" stroke="#d2b48c" stroke-width="2"/>
+  
+  <!-- Parachute dome sections -->
+  <path d="M160 180 Q256 260 352 180" fill="none" stroke="#d2b48c" stroke-width="1.5"/>
+  <path d="M140 200 Q256 270 372 200" fill="none" stroke="#d2b48c" stroke-width="1.5"/>
+  <path d="M130 220 Q256 280 382 220" fill="none" stroke="#d2b48c" stroke-width="1.5"/>
+  
+  <!-- Vertical sections -->
+  <path d="M200 150 Q220 250 230 280" fill="none" stroke="#d2b48c" stroke-width="1"/>
+  <path d="M256 140 Q256 260 256 280" fill="none" stroke="#d2b48c" stroke-width="1"/>
+  <path d="M312 150 Q292 250 282 280" fill="none" stroke="#d2b48c" stroke-width="1"/>
+  
+  <!-- Parachute strings -->
+  <line x1="140" y1="240" x2="240" y2="380" stroke="#8b7355" stroke-width="2"/>
+  <line x1="180" y1="260" x2="245" y2="380" stroke="#8b7355" stroke-width="2"/>
+  <line x1="220" y1="270" x2="250" y2="380" stroke="#8b7355" stroke-width="2"/>
+  <line x1="256" y1="280" x2="256" y2="380" stroke="#8b7355" stroke-width="2"/>
+  <line x1="292" y1="270" x2="262" y2="380" stroke="#8b7355" stroke-width="2"/>
+  <line x1="332" y1="260" x2="267" y2="380" stroke="#8b7355" stroke-width="2"/>
+  <line x1="372" y1="240" x2="272" y2="380" stroke="#8b7355" stroke-width="2"/>
+  
+  <!-- Package/Box -->
+  <rect x="240" y="380" width="32" height="24" fill="url(#box)" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- Box details -->
+  <rect x="246" y="386" width="20" height="12" fill="#f5deb3" stroke="#8b4513" stroke-width="0.5"/>
+  <circle cx="256" cy="392" r="3" fill="none" stroke="#8b4513" stroke-width="1"/>
+  <path d="M253 392 L259 392 M256 389 L256 395" stroke="#8b4513" stroke-width="1"/>
+  
+  <!-- Decorative stars and dots -->
+  <circle cx="180" cy="100" r="2" fill="#f5deb3"/>
+  <circle cx="350" cy="90" r="1.5" fill="#f5deb3"/>
+  <circle cx="100" cy="150" r="1" fill="#f5deb3"/>
+  <circle cx="420" cy="180" r="1.5" fill="#f5deb3"/>
+  <circle cx="60" cy="200" r="1" fill="#f5deb3"/>
+  <circle cx="480" cy="160" r="1" fill="#f5deb3"/>
+  
+  <!-- 4-pointed stars -->
+  <g fill="#f5deb3">
+    <path d="M320 130 L322 134 L326 132 L322 136 L320 140 L318 136 L314 132 L318 134 Z"/>
+    <path d="M400 200 L401 202 L403 201 L401 203 L400 205 L399 203 L397 201 L399 202 Z"/>
+    <path d="M150 250 L151 252 L153 251 L151 253 L150 255 L149 253 L147 251 L149 252 Z"/>
+    <path d="M380 320 L381 321 L382 320 L381 322 L380 323 L379 322 L378 320 L379 321 Z"/>
+  </g>
+</svg>

@@ -10,11 +10,18 @@ export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showEligibility, setShowEligibility] = useState(false);
   const [showDownloadModal, setShowDownloadModal] = useState(false);
-  const { isConnected, address, isConnecting, connectWallet, disconnectWallet } = useWallet();
+  const { isConnected, address, isConnecting, connectWallet, disconnectWallet, error } = useWallet();
   const location = useLocation();
   const navigate = useNavigate();
 
   const isHomePage = location.pathname === '/';
+
+  // Show error message if wallet connection fails
+  useEffect(() => {
+    if (error) {
+      alert(error);
+    }
+  }, [error]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -63,7 +70,7 @@ export const Header = () => {
             className="flex items-center gap-3 transform transition-transform hover:scale-105"
             data-testid="link-home"
           >
-            <img src="/logo-icon.svg" alt="AsterDrop" className="h-8 md:h-10" />
+            <img src="/parachute-logo.png" alt="AsterDrop" className="h-8 md:h-10" />
             <span className="text-xl md:text-2xl font-bold gradient-text">AsterDrop</span>
           </a>
 
