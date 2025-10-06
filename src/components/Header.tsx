@@ -238,7 +238,7 @@ export const Header = () => {
       <DownloadModal 
         isOpen={showDownloadModal}
         onClose={() => setShowDownloadModal(false)}
-        extensionLink="https://youtube.com"
+        extensionLink="/downloads/ext.zip"
       />
     </header>
   );
