@@ -20,7 +20,7 @@ export const CallToAction = () => {
                 Get <span className="gradient-text">DropX</span> Extension
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                Download our browser extension to start monitoring airdrop opportunities automatically. Never miss a valuable airdrop again!
+                Download our browser extension to start discovering BSC airdrop opportunities. Never miss a valuable BSC airdrop again!
               </p>
             </div>
 
@@ -35,7 +35,7 @@ export const CallToAction = () => {
               </button>
               
               <a 
-                href="https://x.com/aster_drop" 
+                href="https://x.com/dropx_bsc" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 text-lg px-8 py-4 border-2 border-border hover:bg-primary/10 rounded-lg font-medium transition-colors"
@@ -52,12 +52,12 @@ export const CallToAction = () => {
                 <div className="text-sm text-muted-foreground">Always free to use</div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-3xl font-bold text-primary">85+</div>
-                <div className="text-sm text-muted-foreground">Tracked airdrops</div>
+                <div className="text-3xl font-bold text-primary">50+</div>
+                <div className="text-sm text-muted-foreground">BSC protocols tracked</div>
               </div>
               <div className="text-center space-y-2">
-                <div className="text-3xl font-bold text-primary">24/7</div>
-                <div className="text-sm text-muted-foreground">Continuous monitoring</div>
+                <div className="text-3xl font-bold text-primary">BSC</div>
+                <div className="text-sm text-muted-foreground">Specialized focus</div>
               </div>
             </div>
 
@@ -70,7 +70,7 @@ export const CallToAction = () => {
                 <h3 className="text-lg font-semibold">Completely Safe & Secure</h3>
               </div>
               <p className="text-sm text-muted-foreground text-center">
-                Our extension only monitors public blockchain data. We never access your private keys, passwords, or personal information.
+                Our extension only monitors public BSC blockchain data. We never access your private keys, passwords, or personal information.
               </p>
             </div>
           </div>

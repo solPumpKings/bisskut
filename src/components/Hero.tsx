@@ -5,9 +5,10 @@ import { LazyReveal } from "@/components/LazyReveal";
 import { useWallet } from "@/hooks/useWallet";
 import { useState, useEffect } from "react";
 import { DownloadModal } from "@/components/DownloadModal";
+import { WalletModal } from "@/components/WalletModal";
 
 export const Hero = () => {
-  const { isConnected, address, connectWallet } = useWallet();
+  const { isConnected, address, connectWallet, walletType, availableWallets, showWalletModal, setShowWalletModal, connectSpecificWallet, isConnecting, error } = useWallet();
   const [showDownloadModal, setShowDownloadModal] = useState(false);
   const [hasCheckedEligibility, setHasCheckedEligibility] = useState(false);
 
@@ -64,12 +65,14 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <LazyReveal delay={200}>
-            {isConnected && hasCheckedEligibility ? (
-              /* Show eligibility status and download */
+            {isConnected ? (
+              /* Connected State - Show Download & Eligible Status */
               <div className="space-y-6">
                 <div className="flex items-center justify-center gap-3 px-6 py-4 bg-green-500/10 border border-green-500/20 rounded-lg">
                   <CheckCircle className="w-6 h-6 text-green-500" />
-                  <span className="text-lg font-medium text-green-500">Found 5 BSC Airdrops You're Eligible For!</span>
+                  <span className="text-lg font-medium text-green-500">
+                    Wallet Connected! ({walletType?.toUpperCase()}) {address?.slice(0, 6)}...{address?.slice(-4)}
+                  </span>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
@@ -79,7 +82,7 @@ export const Hero = () => {
                     onClick={() => setShowDownloadModal(true)}
                   >
                     <Download className="mr-2" />
-                    Search BSC Airdrops
+                    Get DropX Extension
                   </Button>
                   <Button 
                     variant="glass" 
@@ -92,6 +95,9 @@ export const Hero = () => {
                     Learn More
                   </Button>
                 </div>
+                <div className="text-sm text-muted-foreground">
+                  🎉 Ready to discover BSC airdrops! Download the extension to get started.
+                </div>
               </div>
             ) : (
               /* Default CTA buttons */
@@ -101,9 +107,10 @@ export const Hero = () => {
                   size="lg" 
                   className="text-base"
                   onClick={connectWallet}
+                  disabled={isConnecting}
                 >
                   <Zap className="mr-2" />
-                  Search My Wallet
+                  {isConnecting ? "Connecting..." : "Connect Wallet"}
                 </Button>
                 <Button 
                   variant="glass" 
@@ -121,6 +128,16 @@ export const Hero = () => {
         </div>
       </div>
 
+      {/* Wallet Selection Modal */}
+      <WalletModal 
+        isOpen={showWalletModal}
+        onClose={() => setShowWalletModal(false)}
+        wallets={availableWallets}
+        onConnectWallet={connectSpecificWallet}
+        isConnecting={isConnecting}
+        error={error}
+      />
+      
       {/* Download Modal */}
       <DownloadModal 
         isOpen={showDownloadModal}

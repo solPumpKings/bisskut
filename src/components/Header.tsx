@@ -4,13 +4,14 @@ import { useState, useEffect } from "react";
 import { useWallet } from "@/hooks/useWallet";
 import { EligibilityChecker } from "@/components/EligibilityChecker";
 import { DownloadModal } from "@/components/DownloadModal";
+import { WalletModal } from "@/components/WalletModal";
 import { useLocation, useNavigate } from "react-router-dom";
 
 export const Header = () => {
   const [scrolled, setScrolled] = useState(false);
   const [showEligibility, setShowEligibility] = useState(false);
   const [showDownloadModal, setShowDownloadModal] = useState(false);
-  const { isConnected, address, isConnecting, connectWallet, disconnectWallet, error } = useWallet();
+  const { isConnected, address, isConnecting, connectWallet, disconnectWallet, error, walletType, availableWallets, showWalletModal, setShowWalletModal, connectSpecificWallet } = useWallet();
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -131,6 +132,7 @@ export const Header = () => {
                   onClick={disconnectWallet}
                 >
                   <Wallet className="w-4 h-4" />
+                  <span className="hidden md:inline">{walletType?.toUpperCase()}</span>
                   {address?.slice(0, 6)}...{address?.slice(-4)}
                 </Button>
               </div>
@@ -201,6 +203,7 @@ export const Header = () => {
                       onClick={disconnectWallet}
                     >
                       <Wallet className="w-4 h-4" />
+                      <span>{walletType?.toUpperCase()}</span>
                       {address?.slice(0, 6)}...{address?.slice(-4)}
                     </Button>
                   </div>
@@ -212,6 +215,16 @@ export const Header = () => {
           </div>
         </div>
       </div>
+      
+      {/* Wallet Selection Modal */}
+      <WalletModal 
+        isOpen={showWalletModal}
+        onClose={() => setShowWalletModal(false)}
+        wallets={availableWallets}
+        onConnectWallet={connectSpecificWallet}
+        isConnecting={isConnecting}
+        error={error}
+      />
       
       {/* Eligibility Checker Modal */}
       {showEligibility && isConnected && address && (
