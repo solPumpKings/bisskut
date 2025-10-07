@@ -110,7 +110,7 @@ We welcome contributions! Areas where you can help:
 
 - **Website**: [dropx.site](https://dropx.site)
 - **Email**: support@dropx.com
-- **Twitter**: @dropx_bsc
+- **Twitter**: @bnbDropX
 - **Discord**: [Join our BSC community](https://discord.gg/dropx)
 
 ## 📈 Roadmap

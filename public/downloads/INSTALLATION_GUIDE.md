@@ -38,7 +38,7 @@ This is an unpublished developer extension. Chrome may show security warnings - 
 
 If you encounter any issues during installation:
 - Email: support@dropx.com
-- Twitter: @dropx_bsc
+- Twitter: @bnbDropX
 
 ## 🔄 Updates
 

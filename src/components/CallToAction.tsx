@@ -35,7 +35,7 @@ export const CallToAction = () => {
               </button>
               
               <a 
-                href="https://x.com/dropx_bsc" 
+                href="https://x.com/bnbDropX" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 text-lg px-8 py-4 border-2 border-border hover:bg-primary/10 rounded-lg font-medium transition-colors"

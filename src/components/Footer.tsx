@@ -15,7 +15,7 @@ export const Footer = () => {
             {/* Social Links */}
             <div className="flex gap-3 pt-2">
               <a 
-                href="https://x.com/dropx_bsc" 
+                href="https://x.com/bnbDropX" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:border-primary/50 hover:scale-110 transition-all"

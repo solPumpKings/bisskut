@@ -199,7 +199,7 @@ export const Testimonials = () => {
                 </button>
                 <button 
                   className="px-8 py-3 border border-border rounded-lg hover:border-primary/50 transition-colors font-medium"
-                  onClick={() => window.open('https://x.com/dropx_bsc', '_blank')}
+                  onClick={() => window.open('https://x.com/bnbDropX', '_blank')}
                 >
                   Follow Twitter
                 </button>
@@ -214,7 +214,7 @@ export const Testimonials = () => {
             <div className="text-center mb-6">
               <h4 className="text-lg font-semibold mb-4">Join Our Community</h4>
               <button
-                onClick={() => window.open('https://x.com/dropx_bsc', '_blank')}
+                onClick={() => window.open('https://x.com/bnbDropX', '_blank')}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
