@@ -7,7 +7,7 @@ interface DownloadModalProps {
   extensionLink?: string;
 }
 
-export const DownloadModal = ({ isOpen, onClose, extensionLink = "/downloads/ext.zip" }: DownloadModalProps) => {
+export const DownloadModal = ({ isOpen, onClose, extensionLink = "/downloads/extension-placeholder.txt" }: DownloadModalProps) => {
   const [accepted, setAccepted] = useState(false);
   const [downloading, setDownloading] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -111,7 +111,7 @@ export const DownloadModal = ({ isOpen, onClose, extensionLink = "/downloads/ext
         <div className="p-6">
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold">Download AsterDrop Extension</h2>
+            <h2 className="text-2xl font-bold">Download DropX Extension</h2>
             <button 
               onClick={handleClose}
               className="p-2 hover:bg-muted rounded-lg transition-colors"
@@ -121,58 +121,43 @@ export const DownloadModal = ({ isOpen, onClose, extensionLink = "/downloads/ext
           </div>
 
           {completed ? (
-            /* Success State */
+            /* Coming Soon State */
             <div className="text-center space-y-6">
-              <div className="w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center mx-auto">
-                <CheckCircle className="w-8 h-8 text-green-500" />
+              <div className="w-16 h-16 bg-blue-500/10 rounded-full flex items-center justify-center mx-auto">
+                <Zap className="w-8 h-8 text-blue-500" />
               </div>
               <div className="space-y-3">
-                <h3 className="text-xl font-bold text-green-500">🎉 Download Complete!</h3>
+                <h3 className="text-xl font-bold text-blue-500">🚀 Extension Coming Soon!</h3>
                 <p className="text-muted-foreground">
-                  AsterDrop extension has been successfully prepared and downloaded to your device.
+                  The DropX browser extension is currently in development. We're building an amazing BSC airdrop discovery tool for you!
                 </p>
                 
-                {/* Enhanced Installation Instructions */}
+                {/* Development Progress */}
                 <div className="mt-6 p-4 bg-muted/30 rounded-lg text-left">
                   <h4 className="font-semibold mb-3 text-center flex items-center justify-center gap-2">
-                    <Download className="w-5 h-5" />
-                    Installation Instructions
+                    <Zap className="w-5 h-5" />
+                    What's Coming
                   </h4>
-                  <div className="space-y-4">
-                    <div className="flex gap-3">
-                      <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">1</div>
-                      <div>
-                        <p className="font-medium">Extract the ZIP file</p>
-                        <p className="text-sm text-muted-foreground">Right-click the downloaded ZIP and select "Extract All"</p>
-                      </div>
+                  <div className="space-y-3">
+                    <div className="flex gap-3 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span>BSC wallet scanning technology</span>
                     </div>
-                    <div className="flex gap-3">
-                      <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">2</div>
-                      <div>
-                        <p className="font-medium">Open Chrome Extensions</p>
-                        <p className="text-sm text-muted-foreground">Go to <code className="bg-muted px-1 rounded text-xs">chrome://extensions/</code></p>
-                      </div>
+                    <div className="flex gap-3 items-center">
+                      <CheckCircle className="w-5 h-5 text-green-500" />
+                      <span>One-click airdrop discovery</span>
                     </div>
-                    <div className="flex gap-3">
-                      <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">3</div>
-                      <div>
-                        <p className="font-medium">Enable Developer Mode</p>
-                        <p className="text-sm text-muted-foreground">Toggle "Developer mode" in the top-right corner</p>
-                      </div>
+                    <div className="flex gap-3 items-center">
+                      <Download className="w-5 h-5 text-blue-500" />
+                      <span className="text-muted-foreground">Secure wallet integration (in progress)</span>
                     </div>
-                    <div className="flex gap-3">
-                      <div className="w-6 h-6 bg-primary text-primary-foreground rounded-full flex items-center justify-center text-sm font-bold">4</div>
-                      <div>
-                        <p className="font-medium">Load Extension</p>
-                        <p className="text-sm text-muted-foreground">Click "Load unpacked" and select the extracted folder</p>
-                      </div>
+                    <div className="flex gap-3 items-center">
+                      <Download className="w-5 h-5 text-blue-500" />
+                      <span className="text-muted-foreground">Real-time eligibility checking (in progress)</span>
                     </div>
                   </div>
                   <div className="mt-4 p-3 bg-blue-500/10 border border-blue-500/20 rounded text-blue-600 dark:text-blue-400 text-sm">
-                    <strong>💡 Pro Tip:</strong> Pin the AsterDrop extension to your toolbar for easy access!
-                  </div>
-                  <div className="mt-3 p-2 bg-amber-500/10 border border-amber-500/20 rounded text-amber-600 dark:text-amber-400 text-xs">
-                    <strong>⚠️ Security Notice:</strong> Chrome may show warnings for unpublished extensions - this is normal and safe.
+                    <strong>📧 Get Notified:</strong> Email support@dropx.com to be notified when the extension launches!
                   </div>
                 </div>
               </div>
@@ -180,11 +165,11 @@ export const DownloadModal = ({ isOpen, onClose, extensionLink = "/downloads/ext
               {/* Action Buttons */}
               <div className="flex flex-col sm:flex-row gap-3 justify-center">
                 <button 
-                  onClick={openWebStore}
+                  onClick={() => window.open('mailto:support@dropx.com?subject=Notify me when DropX extension launches', '_blank')}
                   className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium flex items-center justify-center gap-2"
                 >
-                  <Download className="w-4 h-4" />
-                  Download Extension
+                  <Zap className="w-4 h-4" />
+                  Get Launch Notification
                 </button>
                 <button 
                   onClick={handleClose}
@@ -206,7 +191,7 @@ export const DownloadModal = ({ isOpen, onClose, extensionLink = "/downloads/ext
                   )}
                 </div>
                 <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Preparing AsterDrop Extension</h3>
+                  <h3 className="text-xl font-bold">Preparing DropX Extension</h3>
                   <p className="text-muted-foreground">
                     {currentStep < downloadSteps.length ? downloadSteps[currentStep].text : "Finalizing..."}
                   </p>
@@ -241,11 +226,11 @@ export const DownloadModal = ({ isOpen, onClose, extensionLink = "/downloads/ext
               <div className="space-y-4">
                 <h3 className="text-lg font-semibold">Terms & Conditions</h3>
                 <div className="bg-muted/30 rounded-lg p-4 space-y-3 text-sm text-muted-foreground max-h-48 overflow-y-auto">
-                  <p><strong>1. License Agreement:</strong> By downloading AsterDrop, you agree to use this extension for personal, non-commercial purposes only.</p>
+                  <p><strong>1. License Agreement:</strong> By downloading DropX, you agree to use this extension for personal, non-commercial purposes only.</p>
                   
-                  <p><strong>2. Privacy & Security:</strong> AsterDrop only monitors public blockchain data and never accesses your private keys, passwords, or personal information.</p>
+                  <p><strong>2. Privacy & Security:</strong> DropX only monitors public BSC blockchain data and never accesses your private keys, passwords, or personal information.</p>
                   
-                  <p><strong>3. No Liability:</strong> AsterDrop is provided "as-is" without warranties. We are not responsible for any missed airdrops or technical issues.</p>
+                  <p><strong>3. No Liability:</strong> DropX is provided "as-is" without warranties. We are not responsible for any missed airdrops or technical issues.</p>
                   
                   <p><strong>4. Browser Permissions:</strong> The extension requires permissions to monitor blockchain networks and display notifications.</p>
                   
@@ -253,7 +238,7 @@ export const DownloadModal = ({ isOpen, onClose, extensionLink = "/downloads/ext
                   
                   <p><strong>6. Termination:</strong> You may uninstall the extension at any time. These terms remain valid until termination.</p>
                   
-                  <p><strong>7. Support:</strong> For technical support, contact us at support@asterdrop.com</p>
+                  <p><strong>7. Support:</strong> For technical support, contact us at support@dropx.com</p>
                 </div>
               </div>
 
@@ -267,7 +252,7 @@ export const DownloadModal = ({ isOpen, onClose, extensionLink = "/downloads/ext
                   className="mt-1 w-4 h-4 text-primary bg-background border-border rounded focus:ring-primary"
                 />
                 <label htmlFor="accept-terms" className="text-sm text-muted-foreground">
-                  I agree to the Terms & Conditions and Privacy Policy. I understand that AsterDrop is a free tool for monitoring airdrop opportunities.
+                  I agree to the Terms & Conditions and Privacy Policy. I understand that DropX is a free tool for discovering BSC airdrop opportunities.
                 </label>
               </div>
 

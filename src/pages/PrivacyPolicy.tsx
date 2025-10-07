@@ -48,7 +48,7 @@ const PrivacyPolicy = () => {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Information We Collect</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  AsterDrop is designed with privacy in mind. We only collect minimal information necessary to provide our airdrop monitoring service:
+                  DropX is designed with privacy in mind. We only collect minimal information necessary to provide our BSC airdrop discovery service:
                 </p>
                 <ul className="list-disc pl-6 text-muted-foreground space-y-2 mt-4">
                   <li>Public wallet addresses you choose to monitor</li>

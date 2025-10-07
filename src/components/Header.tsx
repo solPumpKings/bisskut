@@ -70,8 +70,8 @@ export const Header = () => {
             className="flex items-center gap-3 transform transition-transform hover:scale-105"
             data-testid="link-home"
           >
-            <img src="/parachute-logo.png" alt="AsterDrop" className="h-8 md:h-10" />
-            <span className="text-xl md:text-2xl font-bold gradient-text">AsterDrop</span>
+            <img src="/dropx-logo.png" alt="DropX" className="h-8 md:h-10" />
+            <span className="text-xl md:text-2xl font-bold gradient-text">DropX</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -219,7 +219,7 @@ export const Header = () => {
           <div className="bg-background border border-border rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto">
             <div className="p-6">
               <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold">Airdrop Eligibility Check</h2>
+                <h2 className="text-2xl font-bold">BSC Airdrop Eligibility Check</h2>
                 <Button 
                   variant="ghost" 
                   size="sm" 

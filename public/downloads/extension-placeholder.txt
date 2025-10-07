@@ -1,0 +1,13 @@
+# DropX Browser Extension - Coming Soon
+
+This extension is currently in development.
+
+## Planned Features:
+- BSC wallet scanning
+- Airdrop discovery  
+- One-click eligibility checking
+- Secure wallet integration
+
+## Status: Development Phase
+
+Contact support@dropx.com for updates on release timeline.

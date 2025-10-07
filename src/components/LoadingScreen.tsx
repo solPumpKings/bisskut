@@ -28,10 +28,10 @@ export const LoadingScreen = ({ onComplete }: LoadingScreenProps) => {
         {/* Logo/Title */}
         <div className="space-y-4">
           <h1 className="text-4xl md:text-6xl font-bold gradient-text">
-            AsterDrop
+            DropX
           </h1>
           <p className="text-xl text-muted-foreground">
-            Loading your airdrop automation tool...
+            Loading your BSC airdrop discovery tool...
           </p>
         </div>
 

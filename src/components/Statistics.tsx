@@ -94,7 +94,7 @@ export const Statistics = () => {
               Platform <span className="gradient-text">Overview</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Real-time metrics showing AsterDrop's growing capabilities and airdrop monitoring
+              Real-time metrics showing DropX's growing capabilities and BSC airdrop discovery
             </p>
           </div>
         </LazyReveal>

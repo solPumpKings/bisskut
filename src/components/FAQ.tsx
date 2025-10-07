@@ -10,52 +10,52 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "What is AsterDrop and how does it work?",
-    answer: "AsterDrop is a free airdrop monitoring service that tracks potential airdrops across multiple blockchains. It monitors your wallet addresses for eligibility and sends you notifications when new airdrop opportunities become available."
+    question: "What is DropX and how does it help with BSC airdrops?",
+    answer: "DropX is a specialized BNB Smart Chain airdrop discovery tool that searches your wallet to find airdrops you're eligible for but may have missed. We analyze your BSC transaction history and current holdings to identify unclaimed opportunities."
   },
   {
-    question: "Is AsterDrop really free to use?",
-    answer: "Yes! AsterDrop is completely free to use. We believe everyone should have access to airdrop opportunities without paying fees. There are no hidden costs or subscription requirements."
+    question: "Why focus only on BNB Smart Chain instead of multiple blockchains?",
+    answer: "By specializing in BSC, we can provide deeper, more accurate analysis of the BNB ecosystem. We understand BSC-specific protocols, DeFi patterns, and airdrop mechanics better than generic multi-chain tools, leading to more discoveries."
   },
   {
-    question: "What wallets and blockchains are supported?",
-    answer: "AsterDrop supports major blockchains including Ethereum, Arbitrum, Optimism, Polygon, Solana, and more. You can connect multiple wallet addresses and we'll monitor them all for airdrop eligibility."
+    question: "How does DropX find airdrops I'm eligible for?",
+    answer: "We analyze your BSC wallet's transaction history, token holdings, DeFi interactions, and participation in various protocols. Our algorithm cross-references this data with hundreds of BSC projects that have conducted or announced airdrops."
   },
   {
-    question: "Do you have access to my private keys or funds?",
-    answer: "Never! AsterDrop only monitors public blockchain data using your wallet addresses. We never ask for or have access to your private keys, seed phrases, or funds. Your assets remain completely under your control."
+    question: "What types of BSC airdrops does DropX discover?",
+    answer: "We find various BSC airdrop types including PancakeSwap ecosystem rewards, DeFi protocol distributions, GameFi token airdrops, BSC infrastructure rewards, early user bonuses, and liquidity provider incentives across the BNB Smart Chain."
   },
   {
-    question: "What types of airdrops does AsterDrop track?",
-    answer: "We track various types of airdrops including protocol launches, governance token distributions, retroactive rewards, testnet incentives, and ecosystem airdrops. Our focus is on legitimate, high-value opportunities."
+    question: "Do you access my private keys or funds on BSC?",
+    answer: "Never! DropX only reads public BNB Smart Chain transaction data using your wallet address. We never ask for or have access to your private keys, seed phrases, or funds. Your BSC assets remain completely secure."
   },
   {
-    question: "How quickly will I be notified about new airdrops?",
-    answer: "Our system monitors opportunities in real-time and typically sends notifications within minutes of detecting new airdrop eligibility or announcements. You can customize notification preferences for different types of opportunities."
+    question: "How accurate is DropX in finding BSC airdrop eligibility?",
+    answer: "Our BSC-focused approach allows for high accuracy. We maintain direct integrations with major BSC protocols and use verified smart contract data. While we aim for 95%+ accuracy, we always recommend verifying on official project sites before claiming."
   },
   {
-    question: "Can I customize which airdrops I want to track?",
-    answer: "Yes! You can set preferences for different blockchain networks, project types, and minimum estimated values. This helps filter notifications to only the opportunities that interest you most."
+    question: "Can I check multiple BSC wallets with DropX?",
+    answer: "Yes! You can check multiple BNB Smart Chain wallet addresses in one scan. This is useful if you have separate wallets for different BSC activities like DeFi, gaming, or trading."
   },
   {
-    question: "What happens if I miss an airdrop notification?",
-    answer: "No worries! Your dashboard maintains a complete history of all detected opportunities, including those you may have missed. Many airdrops have claim periods lasting weeks or months."
+    question: "What happens if I find airdrops I'm eligible for?",
+    answer: "DropX provides detailed claiming instructions for each discovered airdrop, including direct links to official claim pages, step-by-step guides, and deadline information. You claim directly from the project's official interface."
   },
   {
-    question: "How do I actually claim airdrops once notified?",
-    answer: "AsterDrop provides monitoring and notifications. When eligible for an airdrop, you'll receive detailed instructions on how to claim it, including links to official claim pages and step-by-step guides."
+    question: "How often should I check for new BSC airdrops?",
+    answer: "New BSC projects launch regularly, so we recommend checking monthly. Major airdrops often have claim periods of 30-90 days, giving you time to claim once discovered. Set reminders to check periodically."
   },
   {
-    question: "I still have a question that isn't answered here",
-    answer: "No problem! You can reach out to our support team through email. We're always happy to help and answer any specific questions about AsterDrop or airdrop opportunities."
+    question: "Does DropX work with BSC DeFi protocols like PancakeSwap?",
+    answer: "Absolutely! DropX specializes in BSC DeFi including PancakeSwap, Venus, Alpaca Finance, Belt Finance, and many others. If you've provided liquidity, traded, or participated in BSC DeFi, you may have unclaimed rewards."
   },
   {
-    question: "How can I send a custom question or feedback?",
-    answer: "You can send us your questions, feedback, or suggestions through our contact form or by reaching out to our support team. We welcome all inquiries and strive to respond promptly to help improve your airdrop monitoring experience."
+    question: "Is DropX free to use for BSC airdrop discovery?",
+    answer: "Yes! Basic BSC airdrop discovery is completely free. We believe everyone should be able to find their eligible airdrops without paying fees. Advanced features like detailed analytics may be premium in the future."
   },
   {
-    question: "Will you add premium features in the future?",
-    answer: "We may introduce optional premium features like advanced analytics, API access, or priority support, but core airdrop monitoring will always remain free for everyone."
+    question: "How do I get started with DropX?",
+    answer: "Simply enter your BNB Smart Chain wallet address and click 'Search'. We'll immediately scan your BSC activity and provide a detailed report of all airdrops you're eligible for, complete with claiming instructions."
   }
 ];
 
@@ -82,7 +82,7 @@ export const FAQ = () => {
               Frequently Asked <span className="gradient-text">Questions</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Everything you need to know about AsterDrop and airdrop monitoring
+              Everything you need to know about DropX and BNB Smart Chain airdrop discovery
             </p>
           </div>
         </LazyReveal>
@@ -114,7 +114,7 @@ export const FAQ = () => {
             <div className="glass-card border-border p-8 rounded-lg max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">Still have questions?</h3>
               <p className="text-muted-foreground mb-6">
-                Ask us anything about AsterDrop
+                Ask us anything about DropX and BSC airdrop discovery
               </p>
               
               {submitted ? (

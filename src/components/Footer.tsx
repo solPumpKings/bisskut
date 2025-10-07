@@ -8,18 +8,18 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold gradient-text">AsterDrop</h3>
+            <h3 className="text-xl font-bold gradient-text">DropX</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Automated airdrop claiming for AsterDex. Secure, fast, and effortless token collection for the modern crypto user.
+              BSC airdrop discovery tool that searches your wallet for airdrops you're eligible for. Fast, secure, and specialized for BNB Smart Chain.
             </p>
             {/* Social Links */}
             <div className="flex gap-3 pt-2">
               <a 
-                href="https://x.com/aster_drop" 
+                href="https://x.com/dropx_bsc" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:border-primary/50 hover:scale-110 transition-all"
-                aria-label="Follow AsterDrop on Twitter"
+                aria-label="Follow DropX on Twitter"
                 data-testid="link-twitter"
               >
                 <Twitter className="w-5 h-5" />
@@ -96,7 +96,7 @@ export const Footer = () => {
             <ul className="space-y-3 text-sm text-muted-foreground">
               <li>
                 <div className="text-muted-foreground/80">
-                  Non-custodial monitoring
+                  BSC wallet scanning only
                 </div>
               </li>
               <li>
@@ -106,7 +106,7 @@ export const Footer = () => {
               </li>
               <li>
                 <div className="text-muted-foreground/80">
-                  Public blockchain data only
+                  Public BSC data only
                 </div>
               </li>
               <li>
@@ -145,10 +145,10 @@ export const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm text-muted-foreground text-center md:text-left">
-            © 2025 AsterDrop. All rights reserved.
+            © 2025 DropX. All rights reserved.
           </p>
           <p className="text-xs text-muted-foreground/70 text-center md:text-right">
-            Free Browser Extension for Airdrop Monitoring
+            Free BSC Airdrop Discovery Tool
           </p>
         </div>
       </div>

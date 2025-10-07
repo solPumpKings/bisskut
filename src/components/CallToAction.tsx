@@ -17,7 +17,7 @@ export const CallToAction = () => {
           <div className="text-center space-y-8 max-w-4xl mx-auto">
             <div className="space-y-4">
               <h2 className="text-4xl md:text-6xl font-bold">
-                Get <span className="gradient-text">AsterDrop</span> Extension
+                Get <span className="gradient-text">DropX</span> Extension
               </h2>
               <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
                 Download our browser extension to start monitoring airdrop opportunities automatically. Never miss a valuable airdrop again!

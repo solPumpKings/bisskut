@@ -62,7 +62,7 @@ const testimonials = [
     avatar: "LJ",
     image: "",
     rating: 5,
-    content: "I help others in various crypto communities, and AsterDrop is the first tool I recommend for airdrop tracking. Simple, effective, and completely free!",
+    content: "I help others in various crypto communities, and DropX is the first tool I recommend for BSC airdrop discovery. Simple, effective, and completely free!",
     claimed: "Recommending",
     timeUsing: "11 days"
   }
@@ -108,7 +108,7 @@ export const Testimonials = () => {
               What Our <span className="gradient-text">Users Say</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Join thousands of satisfied users who trust AsterDrop for their airdrop automation
+              Join thousands of satisfied users who trust DropX for their BSC airdrop discovery
             </p>
           </div>
         </LazyReveal>
@@ -159,7 +159,7 @@ export const Testimonials = () => {
                     </div>
                     <div className="text-center">
                       <div className="text-lg font-bold text-primary">{testimonial.timeUsing}</div>
-                      <div className="text-xs text-muted-foreground">Using AsterDrop</div>
+                      <div className="text-xs text-muted-foreground">Using DropX</div>
                     </div>
                   </div>
 
@@ -188,7 +188,7 @@ export const Testimonials = () => {
             <div className="glass-card border-border p-8 rounded-lg max-w-2xl mx-auto">
               <h3 className="text-2xl font-bold mb-4">Join Our Growing Community</h3>
               <p className="text-muted-foreground mb-6">
-                Be part of the future of airdrop automation and never miss an opportunity
+                Be part of the future of BSC airdrop discovery and never miss an opportunity
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button 
@@ -199,7 +199,7 @@ export const Testimonials = () => {
                 </button>
                 <button 
                   className="px-8 py-3 border border-border rounded-lg hover:border-primary/50 transition-colors font-medium"
-                  onClick={() => window.open('https://x.com/aster_drop', '_blank')}
+                  onClick={() => window.open('https://x.com/dropx_bsc', '_blank')}
                 >
                   Follow Twitter
                 </button>
@@ -214,7 +214,7 @@ export const Testimonials = () => {
             <div className="text-center mb-6">
               <h4 className="text-lg font-semibold mb-4">Join Our Community</h4>
               <button
-                onClick={() => window.open('https://x.com/aster_drop', '_blank')}
+                onClick={() => window.open('https://x.com/dropx_bsc', '_blank')}
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
               >
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">

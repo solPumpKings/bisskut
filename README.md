@@ -1,73 +1,136 @@
-# Welcome to your Lovable project
+# DropX - BNB Smart Chain Airdrop Discovery
 
-## Project info
+🟡 **Discover BSC airdrops you're eligible for**
 
-**URL**: https://lovable.dev/projects/42ffecf0-7a32-4260-b2d4-d4b6451f022f
+DropX is a specialized BNB Smart Chain airdrop discovery tool that searches your wallet to find airdrops you're eligible for but may have missed. Get instant results with detailed claiming instructions.
 
-## How can I edit this code?
+## 🌟 Key Features
 
-There are several ways of editing your application.
+- **BSC Wallet Analysis**: Deep scan of your BNB Smart Chain transaction history and holdings
+- **Instant Discovery**: Find unclaimed airdrops in seconds across the BSC ecosystem  
+- **Detailed Instructions**: Step-by-step claiming guides for each discovered opportunity
+- **BSC Expertise**: Specialized knowledge of BNB Smart Chain protocols and patterns
+- **Completely Free**: No fees for basic airdrop discovery
 
-**Use Lovable**
+## 🚀 Why DropX?
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/42ffecf0-7a32-4260-b2d4-d4b6451f022f) and start prompting.
+Many BSC users have eligible airdrops they don't know about. DropX solves this by:
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Deep BSC Analysis**: Specialized scanning of BNB Smart Chain ecosystem
+- **Hidden Opportunities**: Find airdrops from lesser-known BSC projects
+- **Historical Coverage**: Discover past airdrops you may have missed
+- **Multi-Wallet Support**: Check multiple BSC addresses simultaneously
 
-**Use your preferred IDE**
+## 📊 Supported BSC Protocols
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Major Platforms
+- **PancakeSwap** (CAKE) - LP rewards and trading incentives
+- **Venus Protocol** (XVS) - Lending/borrowing rewards
+- **Biswap** (BSW) - DEX trading rewards
+- **Alpaca Finance** (ALPACA) - Yield farming rewards
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### DeFi Ecosystem
+- Belt Finance, Mobox, Trust Wallet Token
+- BSC gaming protocols and NFT platforms
+- Cross-chain bridge rewards (Stargate, etc.)
+- BSC infrastructure and utility tokens
 
-Follow these steps:
+### Upcoming Opportunities
+- Thena Protocol - Expected Q1 2025
+- Space ID BSC campaigns
+- New BSC project airdrops
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🔍 How DropX Works
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+1. **Connect BSC Wallet**: Enter your BNB Smart Chain wallet address
+2. **Deep Scan**: We analyze your transaction history and token holdings
+3. **Discover Airdrops**: Get a detailed report of all eligible airdrops
+4. **Claim Instructions**: Follow step-by-step guides to claim each airdrop
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠 Technologies Used
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+- **Frontend**: React 18 + TypeScript + Vite
+- **UI Framework**: shadcn/ui + Tailwind CSS
+- **Blockchain**: BNB Smart Chain integration
+- **Analysis Engine**: BSC transaction parsing
+- **Data Sources**: BSC RPC nodes and APIs
+
+## 🏃‍♂️ Quick Start
+
+### Development Setup
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd dropx-bsc-discovery
+```
+
+2. **Install dependencies**
+```bash
+npm install
+```
+
+3. **Start development server**
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. **Build for production**
+```bash
+npm run build
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📱 Browser Extension
 
-**Use GitHub Codespaces**
+DropX includes a browser extension for seamless BSC airdrop discovery:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+- **Installation**: Manual installation via developer mode
+- **Features**: One-click BSC wallet scanning, airdrop discovery
+- **Security**: Read-only access to public BSC data
+- **Compatibility**: Chrome, Firefox, Edge
 
-## What technologies are used for this project?
+See [`/public/downloads/INSTALLATION_GUIDE.md`](./public/downloads/INSTALLATION_GUIDE.md) for setup instructions.
 
-This project is built with:
+## 🔒 Security & Privacy
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- **Non-Custodial**: We never access your private keys or funds
+- **BSC Read-Only**: Only reads public BNB Smart Chain transaction data
+- **Privacy First**: No personal information required
+- **Open Source**: Transparent BSC analysis algorithms
 
-## How can I deploy this project?
+## 🤝 Contributing
 
-Simply open [Lovable](https://lovable.dev/projects/42ffecf0-7a32-4260-b2d4-d4b6451f022f) and click on Share -> Publish.
+We welcome contributions! Areas where you can help:
 
-## Can I connect a custom domain to my Lovable project?
+- Adding support for new BSC protocols
+- Improving BSC airdrop detection algorithms  
+- Enhancing UI/UX for discovery results
+- Writing BSC-specific documentation
 
-Yes, you can!
+## 📞 Support & Contact
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Website**: [dropx.site](https://dropx.site)
+- **Email**: support@dropx.com
+- **Twitter**: @dropx_bsc
+- **Discord**: [Join our BSC community](https://discord.gg/dropx)
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 📈 Roadmap
+
+### Current Features
+- ✅ BSC wallet deep scanning
+- ✅ Instant airdrop discovery
+- ✅ Detailed claiming instructions
+- ✅ Multi-wallet support
+
+### Coming Soon
+- 🔄 Advanced BSC analytics dashboard
+- 🔄 Mobile app for BSC discovery
+- 🔄 API access for BSC developers
+- 🔄 BSC yield optimization tools
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+**Built for the BSC community by airdrop discovery experts** 🟡

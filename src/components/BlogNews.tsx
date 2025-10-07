@@ -6,7 +6,7 @@ import { useState } from "react";
 
 const blogPosts = [
   {
-    title: "AsterDrop v2.0: Advanced Multi-Chain Support Now Live",
+    title: "DropX v2.0: Enhanced BSC Discovery Features Now Live",
     excerpt: "Experience the future of airdrop automation with our new multi-chain architecture supporting Ethereum, Polygon, and Arbitrum ecosystems.",
     category: "Product Update",
     date: "March 8, 2025",
@@ -47,7 +47,7 @@ const blogPosts = [
   },
   {
     title: "AsterVault Integration: Enhanced Yield Opportunities",
-    excerpt: "Discover how our new partnership with AsterVault creates additional earning opportunities for AsterDrop users.",
+    excerpt: "Discover how our new partnership with BSC DeFi protocols creates additional earning opportunities for DropX users.",
     category: "Partnership",
     date: "February 25, 2025",
     readTime: "4 min read",
@@ -89,7 +89,7 @@ const additionalPosts = [
     author: "Research Team"
   },
   {
-    title: "AsterDrop Extension v1.2 Release Notes",
+    title: "DropX Extension v1.2 Release Notes",
     excerpt: "New features include custom notification settings, improved wallet detection, and enhanced security measures for safer airdrop monitoring.",
     category: "Product Update",
     date: "February 12, 2025",
@@ -331,7 +331,7 @@ export const BlogNews = () => {
                     <div className="mt-8 space-y-6">
                       <h2 className="text-2xl font-bold">Introduction</h2>
                       <p className="leading-relaxed text-muted-foreground">
-                        This comprehensive guide explores the latest developments in airdrop strategies and how AsterDrop helps users stay ahead of opportunities. We'll dive deep into the technical aspects, market trends, and practical applications.
+                        This comprehensive guide explores the latest developments in BSC airdrop strategies and how DropX helps users discover missed opportunities. We'll dive deep into the technical aspects, market trends, and practical applications.
                       </p>
                       
                       <h2 className="text-2xl font-bold">Key Insights</h2>
@@ -344,7 +344,7 @@ export const BlogNews = () => {
                       
                       <h2 className="text-2xl font-bold">Conclusion</h2>
                       <p className="leading-relaxed text-muted-foreground">
-                        As the airdrop landscape continues to evolve, staying informed and using the right tools becomes increasingly important. AsterDrop's monitoring capabilities ensure you never miss valuable opportunities while maintaining security best practices.
+                        As the BSC airdrop landscape continues to evolve, staying informed and using the right tools becomes increasingly important. DropX's discovery capabilities ensure you never miss valuable BSC opportunities while maintaining security best practices.
                       </p>
                     </div>
                   </div>

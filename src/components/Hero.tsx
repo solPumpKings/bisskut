@@ -43,7 +43,7 @@ export const Hero = () => {
           <LazyReveal delay={0}>
             <div className="glass-card px-4 py-2 rounded-full">
               <p className="text-sm font-medium text-muted-foreground">
-                🚀 Browser Extension for Airdrop Monitoring
+                🟡 BNB Smart Chain Airdrop Discovery Tool
               </p>
             </div>
           </LazyReveal>
@@ -57,7 +57,7 @@ export const Hero = () => {
                 {" "}Again
               </h1>
               <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-                Automate your AsterDex airdrop claims with AsterDrop. Secure, fast, and effortless token collection.
+                Search and discover airdrops you're eligible for on BNB Smart Chain. Find hidden opportunities in the BSC ecosystem.
               </p>
             </div>
           </LazyReveal>
@@ -69,7 +69,7 @@ export const Hero = () => {
               <div className="space-y-6">
                 <div className="flex items-center justify-center gap-3 px-6 py-4 bg-green-500/10 border border-green-500/20 rounded-lg">
                   <CheckCircle className="w-6 h-6 text-green-500" />
-                  <span className="text-lg font-medium text-green-500">You're Eligible for Airdrops!</span>
+                  <span className="text-lg font-medium text-green-500">Found 5 BSC Airdrops You're Eligible For!</span>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button 
@@ -79,7 +79,7 @@ export const Hero = () => {
                     onClick={() => setShowDownloadModal(true)}
                   >
                     <Download className="mr-2" />
-                    Download Extension
+                    Search BSC Airdrops
                   </Button>
                   <Button 
                     variant="glass" 
@@ -103,7 +103,7 @@ export const Hero = () => {
                   onClick={connectWallet}
                 >
                   <Zap className="mr-2" />
-                  Connect Wallet
+                  Search My Wallet
                 </Button>
                 <Button 
                   variant="glass" 

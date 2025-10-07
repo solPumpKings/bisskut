@@ -1,27 +1,27 @@
-import { Shield, Zap, Clock, TrendingUp } from "lucide-react";
+import { Shield, Bell, Search, TrendingUp } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { LazyReveal } from "@/components/LazyReveal";
 
 const features = [
   {
-    icon: Zap,
-    title: "Lightning Fast",
-    description: "Automated claiming process that works 24/7, ensuring you never miss a single airdrop opportunity.",
+    icon: Search,
+    title: "BSC Airdrop Discovery",
+    description: "Deep search through BNB Smart Chain ecosystem to find airdrops you're eligible for but haven't claimed yet.",
+  },
+  {
+    icon: Bell,
+    title: "Eligibility Alerts",
+    description: "Get notified when new BSC projects launch airdrops or when you become eligible for existing opportunities.",
   },
   {
     icon: Shield,
-    title: "Secure & Safe",
-    description: "Non-custodial solution with bank-grade security. Your keys, your tokens, always.",
-  },
-  {
-    icon: Clock,
-    title: "Set & Forget",
-    description: "Configure once and let AsterDrop handle all future claims automatically.",
+    title: "Secure Wallet Scan",
+    description: "We only read public transaction data on BSC. Your private keys and sensitive information remain completely secure.",
   },
   {
     icon: TrendingUp,
-    title: "Maximize Returns",
-    description: "Claim airdrops at optimal times to maximize your token returns and rewards.",
+    title: "BSC Ecosystem Focus",
+    description: "Specialized in BNB Smart Chain projects, DeFi protocols, and emerging BSC opportunities with real value.",
   },
 ];
 
@@ -32,10 +32,10 @@ export const Features = () => {
         <LazyReveal>
           <div className="text-center space-y-4 mb-16">
             <h2 className="text-4xl md:text-5xl font-bold">
-              Why Choose <span className="gradient-text">AsterDrop</span>?
+              Why Choose <span className="gradient-text">DropX</span>?
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The most advanced airdrop automation tool built for the AsterDex ecosystem
+              The most comprehensive BNB Smart Chain airdrop discovery tool
             </p>
           </div>
         </LazyReveal>

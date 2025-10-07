@@ -48,14 +48,14 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Acceptance of Terms</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By using AsterDrop, you agree to these Terms of Service. If you do not agree, please do not use our service.
+                  By using DropX, you agree to these Terms of Service. If you do not agree, please do not use our service.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-bold mb-4">Service Description</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  AsterDrop is a browser extension that monitors public blockchain data to identify airdrop opportunities for your wallet addresses. Our service:
+                  DropX is a browser extension that monitors public BSC blockchain data to identify airdrop opportunities for your wallet addresses. Our service:
                 </p>
                 <ul className="list-disc pl-6 text-muted-foreground space-y-2 mt-4">
                   <li>Monitors public blockchain transactions</li>
@@ -79,7 +79,7 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-bold mb-4">Disclaimers</h2>
                 <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4">
                   <p className="text-muted-foreground leading-relaxed">
-                    <strong>Important:</strong> AsterDrop is a monitoring tool only. We do not:
+                    <strong>Important:</strong> DropX is a discovery tool only. We do not:
                   </p>
                   <ul className="list-disc pl-6 text-muted-foreground space-y-2 mt-2">
                     <li>Guarantee airdrop eligibility or success</li>
@@ -93,7 +93,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Limitation of Liability</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  AsterDrop is provided "as is" without warranties. We are not liable for any losses, damages, or missed opportunities related to airdrop claims.
+                  DropX is provided "as is" without warranties. We are not liable for any losses, damages, or missed opportunities related to airdrop claims.
                 </p>
               </section>
 
@@ -107,7 +107,7 @@ const TermsOfService = () => {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Changes to Terms</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  We may update these terms occasionally. Continued use of AsterDrop constitutes acceptance of any changes.
+                  We may update these terms occasionally. Continued use of DropX constitutes acceptance of any changes.
                 </p>
               </section>
 

@@ -1,25 +1,25 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Wallet, Bot, CheckCircle2, Shield, Zap, Clock } from "lucide-react";
+import { Wallet, Search, Bell, Shield, Zap, TrendingUp } from "lucide-react";
 import { LazyReveal } from "@/components/LazyReveal";
 
 export const HowItWorks = () => {
   const steps = [
     {
       icon: Wallet,
-      title: "Connect Your Wallet",
-      description: "Securely link your AsterDex wallet using industry-standard Web3 protocols. Your keys remain safe with you.",
+      title: "Connect BSC Wallet",
+      description: "Connect your BNB Smart Chain wallet address. We'll scan your transaction history and current holdings for airdrop eligibility.",
       color: "text-primary",
     },
     {
-      icon: Bot,
-      title: "Enable Auto-Claiming",
-      description: "Set up automated rules for airdrop detection and claiming. Customize your preferences for different token types.",
+      icon: Search,
+      title: "Deep BSC Scan",
+      description: "Our system analyzes your BSC activity across hundreds of projects to find airdrops you're eligible for but may have missed.",
       color: "text-primary",
     },
     {
-      icon: CheckCircle2,
-      title: "Sit Back & Relax",
-      description: "Our smart contracts monitor and claim eligible airdrops automatically. Tokens are sent directly to your wallet.",
+      icon: Bell,
+      title: "Discover & Claim",
+      description: "Get a detailed report of all BSC airdrops you can claim, with direct links and claiming instructions for each opportunity.",
       color: "text-green-500",
     },
   ];
@@ -27,18 +27,18 @@ export const HowItWorks = () => {
   const benefits = [
     {
       icon: Zap,
-      title: "Lightning Fast",
-      description: "Automated claiming happens within seconds of airdrop eligibility",
+      title: "Instant BSC Scanning",
+      description: "Complete wallet analysis in seconds across BSC ecosystem",
     },
     {
       icon: Shield,
-      title: "Secure & Non-Custodial",
-      description: "Your assets remain in your control at all times",
+      title: "Read-Only Access",
+      description: "We only read public BSC transaction data, never your keys",
     },
     {
-      icon: Clock,
-      title: "24/7 Monitoring",
-      description: "Never miss an airdrop, even while you sleep",
+      icon: TrendingUp,
+      title: "BSC Expertise",
+      description: "Specialized knowledge of BNB Smart Chain airdrop patterns",
     },
   ];
 
@@ -51,7 +51,7 @@ export const HowItWorks = () => {
               How <span className="gradient-text">It Works</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Three simple steps to automate your AsterDex airdrop claims
+              Three simple steps to discover BSC airdrops you're eligible for
             </p>
           </div>
         </LazyReveal>
@@ -84,10 +84,10 @@ export const HowItWorks = () => {
         <LazyReveal>
           <div className="text-center space-y-4 mb-12 mt-20">
             <h3 className="text-3xl md:text-4xl font-bold">
-              Why Choose <span className="gradient-text">AsterDrop</span>
+              Why Choose <span className="gradient-text">DropX</span>
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              The most efficient way to maximize your airdrop rewards
+              The most efficient way to discover BSC airdrop opportunities
             </p>
           </div>
         </LazyReveal>
@@ -121,11 +121,10 @@ export const HowItWorks = () => {
                 <Shield className="w-6 h-6 text-primary" />
               </div>
               <div className="space-y-2">
-                <h4 className="text-xl font-bold">Security First</h4>
+                <h4 className="text-xl font-bold">BSC Security & Privacy</h4>
                 <p className="text-muted-foreground">
-                  AsterDrop uses audited smart contracts and never has access to your private keys. 
-                  All transactions are signed by your wallet, ensuring complete security and transparency. 
-                  Your assets remain in your custody at all times.
+                  DropX only reads public BNB Smart Chain transaction data and never accesses your private keys or funds. 
+                  We use industry-standard security practices to analyze your BSC activity while keeping your wallet completely secure.
                 </p>
               </div>
             </div>

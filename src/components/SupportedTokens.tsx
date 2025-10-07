@@ -5,86 +5,104 @@ import { Coins, Star, TrendingUp, Shield, Clock } from "lucide-react";
 
 const tokenCategories = [
   {
-    category: "Layer 2 & Scaling",
+    category: "Major BSC DEX Platforms",
     icon: TrendingUp,
-    description: "Layer 2 solutions and scaling platforms with potential airdrops",
+    description: "Leading BNB Smart Chain decentralized exchanges with airdrop programs",
     tokens: [
       {
-        name: "zkSync Era",
-        symbol: "ZK",
-        logo: "⚡",
-        status: "Monitoring",
-        lastAirdrop: "TBD",
-        totalClaimed: "Pending",
-        claimCount: "Tracking"
+        name: "PancakeSwap",
+        symbol: "CAKE",
+        logo: "🥞",
+        status: "Active",
+        lastAirdrop: "Ongoing Rewards",
+        totalClaimed: "LP Incentives",
+        claimCount: "Multiple"
       },
       {
-        name: "LayerZero",
-        symbol: "ZRO",
-        logo: "🔗",
-        status: "Monitoring",
-        lastAirdrop: "TBD",
-        totalClaimed: "Pending",
-        claimCount: "Tracking"
+        name: "Venus Protocol",
+        symbol: "XVS",
+        logo: "🪐",
+        status: "Active",
+        lastAirdrop: "Q4 2024",
+        totalClaimed: "$200-500",
+        claimCount: "Ongoing"
       },
       {
-        name: "Polygon zkEVM",
-        symbol: "POL",
-        logo: "🔷",
-        status: "Monitoring",
-        lastAirdrop: "TBD",
-        totalClaimed: "Pending",
-        claimCount: "Tracking"
+        name: "Biswap",
+        symbol: "BSW",
+        logo: "🔁",
+        status: "Active",
+        lastAirdrop: "Trading Rewards",
+        totalClaimed: "$50-200",
+        claimCount: "Weekly"
       }
     ]
   },
   {
-    category: "DeFi Protocols",
+    category: "BSC DeFi Protocols",
     icon: Star,
-    description: "Decentralized finance protocols with potential token distributions",
+    description: "BNB Smart Chain DeFi platforms with potential token distributions",
     tokens: [
       {
-        name: "Hyperliquid",
-        symbol: "HYPE",
-        logo: "💧",
-        status: "Monitoring",
-        lastAirdrop: "TBD",
-        totalClaimed: "Pending",
-        claimCount: "Tracking"
+        name: "Alpaca Finance",
+        symbol: "ALPACA",
+        logo: "🦙",
+        status: "Active",
+        lastAirdrop: "Yield Farming",
+        totalClaimed: "$100-400",
+        claimCount: "Ongoing"
       },
       {
-        name: "Ambient Finance",
-        symbol: "AMB",
-        logo: "🌊",
+        name: "Belt Finance",
+        symbol: "BELT",
+        logo: "🎀",
         status: "Monitoring",
         lastAirdrop: "TBD",
-        totalClaimed: "Pending",
-        claimCount: "Tracking"
+        totalClaimed: "Expected",
+        claimCount: "Future"
+      },
+      {
+        name: "Mobox",
+        symbol: "MBOX",
+        logo: "🎮",
+        status: "Active",
+        lastAirdrop: "Gaming Rewards",
+        totalClaimed: "$30-150",
+        claimCount: "Daily"
       }
     ]
   },
   {
-    category: "Completed Airdrops",
+    category: "BSC Infrastructure",
     icon: Shield,
-    description: "Reference examples of past successful airdrops",
+    description: "BNB Smart Chain infrastructure and utility tokens",
     tokens: [
       {
-        name: "Arbitrum",
-        symbol: "ARB",
-        logo: "🔵",
-        status: "Completed",
-        lastAirdrop: "March 2023",
-        totalClaimed: "$1,200 avg",
-        claimCount: "Reference"
+        name: "BNB Chain",
+        symbol: "BNB",
+        logo: "🟡",
+        status: "Core",
+        lastAirdrop: "Validator Rewards",
+        totalClaimed: "Staking APY",
+        claimCount: "Ongoing"
       },
       {
-        name: "Optimism",
-        symbol: "OP",
-        logo: "🔴",
-        status: "Completed",
-        lastAirdrop: "May 2022",
-        totalClaimed: "$680 avg",
-        claimCount: "Reference"
+        name: "Trust Wallet",
+        symbol: "TWT",
+        logo: "📱",
+        status: "Active",
+        lastAirdrop: "User Rewards",
+        totalClaimed: "$20-80",
+        claimCount: "Monthly"
+      },
+      {
+        name: "SafePal",
+        symbol: "SFP",
+        logo: "🔐",
+        status: "Active",
+        lastAirdrop: "Wallet Events",
+        totalClaimed: "$15-60",
+        claimCount: "Events"
       }
     ]
   }
@@ -92,28 +110,28 @@ const tokenCategories = [
 
 const upcomingAirdrops = [
   {
-    name: "Meteora Protocol",
-    symbol: "MET",
-    logo: "☄️",
-    launchDate: "TBD 2025",
-    estimatedValue: "$500 - $2,000",
-    eligibility: "Solana DeFi users, Liquidity providers"
+    name: "Thena Protocol",
+    symbol: "THE",
+    logo: "⚡",
+    launchDate: "Expected Q1 2025",
+    estimatedValue: "$150 - $600",
+    eligibility: "BSC DEX users, Liquidity providers"
   },
   {
-    name: "Monad Testnet",
-    symbol: "MON",
-    logo: "🚀",
-    launchDate: "Q2 2025",
-    estimatedValue: "$300 - $1,500",
-    eligibility: "Testnet participants, Validators"
+    name: "Stargate BSC",
+    symbol: "STG",
+    logo: "🌌",
+    launchDate: "Ongoing Claims",
+    estimatedValue: "$100 - $400",
+    eligibility: "Cross-chain bridge users"
   },
   {
-    name: "Abstract Chain",
-    symbol: "ABS",
-    logo: "🎨",
-    launchDate: "TBD 2025",
-    estimatedValue: "$200 - $800",
-    eligibility: "Early users, NFT creators"
+    name: "Space ID BSC",
+    symbol: "ID",
+    logo: "🌌",
+    launchDate: "Active Campaign",
+    estimatedValue: "$50 - $200",
+    eligibility: "BSC domain holders, Web3 users"
   }
 ];
 
@@ -127,10 +145,10 @@ export const SupportedTokens = () => {
               <Coins className="w-8 h-8 text-primary" />
             </div>
             <h2 className="text-4xl md:text-5xl font-bold">
-              Supported <span className="gradient-text">Tokens</span>
+              BSC <span className="gradient-text">Ecosystem</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Complete coverage of major blockchain ecosystems with 85+ tracked opportunities
+              Comprehensive coverage of BNB Smart Chain projects and airdrop opportunities
             </p>
           </div>
         </LazyReveal>
@@ -163,8 +181,8 @@ export const SupportedTokens = () => {
                             </div>
                           </div>
                           <Badge 
-                            variant={token.status === "Monitoring" ? "default" : token.status === "Completed" ? "secondary" : "outline"}
-                            className={token.status === "Monitoring" ? "bg-blue-500/10 text-blue-500 border-blue-500/20" : token.status === "Completed" ? "bg-green-500/10 text-green-500 border-green-500/20" : ""}
+                            variant={token.status === "Active" ? "default" : token.status === "Completed" ? "secondary" : "outline"}
+                            className={token.status === "Active" ? "bg-green-500/10 text-green-500 border-green-500/20" : token.status === "Completed" ? "bg-blue-500/10 text-blue-500 border-blue-500/20" : "bg-orange-500/10 text-orange-500 border-orange-500/20"}
                           >
                             {token.status}
                           </Badge>
@@ -246,12 +264,12 @@ export const SupportedTokens = () => {
         <LazyReveal delay={500}>
           <div className="mt-16 text-center">
             <div className="glass-card border-border p-8 rounded-lg max-w-2xl mx-auto">
-              <h4 className="text-2xl font-bold mb-4">Never Miss an Opportunity</h4>
+              <h4 className="text-2xl font-bold mb-4">Start BSC Discovery</h4>
               <p className="text-muted-foreground mb-6">
-                Connect your wallet now to start monitoring airdrop opportunities across all supported blockchains
+                Connect your BNB Smart Chain wallet to discover airdrops you're eligible for. Get detailed claiming instructions for each opportunity.
               </p>
               <button className="px-8 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium">
-                Connect Wallet & Start Monitoring
+                Search My BSC Wallet
               </button>
             </div>
           </div>

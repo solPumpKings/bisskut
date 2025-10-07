@@ -1,11 +1,11 @@
-# AsterDrop Extension Installation Guide
+# DropX Extension Installation Guide
 
 ## 🚀 Quick Installation
 
 Since this extension is not yet published on the Chrome Web Store, follow these steps to install it manually:
 
 ### Step 1: Extract the Files
-1. Download the `asterdrop-extension.zip` file
+1. Download the `dropx-extension.zip` file
 2. Right-click the ZIP file and select "Extract All"
 3. Choose a location to extract (e.g., Desktop or Documents)
 
@@ -20,7 +20,7 @@ Since this extension is not yet published on the Chrome Web Store, follow these 
 3. Select the main extension folder and click "Select Folder"
 
 ### Step 4: Verify Installation
-- You should see the AsterDrop extension appear in your extensions list
+- You should see the DropX extension appear in your extensions list
 - The extension icon should appear in your Chrome toolbar
 - The extension is now ready to use!
 
@@ -28,17 +28,17 @@ Since this extension is not yet published on the Chrome Web Store, follow these 
 
 This is an unpublished developer extension. Chrome may show security warnings - this is completely normal for extensions that aren't distributed through the Chrome Web Store.
 
-**AsterDrop only monitors public blockchain data and never accesses:**
+**DropX only monitors public BSC blockchain data and never accesses:**
 - Your private keys
 - Your passwords
 - Your personal information
-- Your browsing history outside of blockchain interactions
+- Your browsing history outside of BSC interactions
 
 ## 📧 Support
 
 If you encounter any issues during installation:
-- Email: support@asterdrop.com
-- Twitter: @aster_drop
+- Email: support@dropx.com
+- Twitter: @dropx_bsc
 
 ## 🔄 Updates
 
@@ -49,4 +49,4 @@ To update the extension:
 
 ---
 
-**AsterDrop Team** - Free Airdrop Monitoring Extension
+**DropX Team** - Free BSC Airdrop Discovery Extension

@@ -48,7 +48,7 @@ const RiskDisclaimer = () => {
               <div className="bg-red-500/10 border border-red-500/20 rounded-lg p-6">
                 <h2 className="text-xl font-bold text-red-400 mb-4">⚠️ Important Risk Warning</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  Cryptocurrency airdrops and DeFi activities involve significant risks. Please read this disclaimer carefully before using AsterDrop.
+                  Cryptocurrency airdrops and DeFi activities involve significant risks. Please read this disclaimer carefully before using DropX.
                 </p>
               </div>
 
@@ -86,9 +86,9 @@ const RiskDisclaimer = () => {
               </section>
 
               <section>
-                <h2 className="text-2xl font-bold mb-4">AsterDrop Limitations</h2>
+                <h2 className="text-2xl font-bold mb-4">DropX Limitations</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  AsterDrop is a monitoring tool that:
+                  DropX is a discovery tool that:
                 </p>
                 <ul className="list-disc pl-6 text-muted-foreground space-y-2 mt-4">
                   <li>Cannot guarantee airdrop eligibility or success</li>
@@ -101,7 +101,7 @@ const RiskDisclaimer = () => {
               <section>
                 <h2 className="text-2xl font-bold mb-4">Your Responsibility</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  By using AsterDrop, you acknowledge that:
+                  By using DropX, you acknowledge that:
                 </p>
                 <ul className="list-disc pl-6 text-muted-foreground space-y-2 mt-4">
                   <li>You understand the risks involved in cryptocurrency activities</li>

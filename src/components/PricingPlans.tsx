@@ -112,7 +112,7 @@ export const PricingPlans = () => {
               Free <span className="gradient-text">Forever</span>
             </h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              AsterDrop is completely free to use. No hidden fees, no subscriptions.
+              DropX is completely free to use. No hidden fees, no subscriptions.
             </p>
           </div>
         </LazyReveal>
@@ -211,7 +211,7 @@ export const PricingPlans = () => {
               Future <span className="gradient-text">Features</span>
             </h3>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Planned enhancements to make AsterDrop even better
+              Planned enhancements to make DropX even better
             </p>
           </div>
         </LazyReveal>
@@ -250,9 +250,9 @@ export const PricingPlans = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">Is AsterDrop really free?</h4>
+                  <h4 className="font-semibold mb-2">Is DropX really free?</h4>
                   <p className="text-sm text-muted-foreground">
-                    Yes! AsterDrop is completely free to use. We believe airdrop automation should be accessible to everyone.
+                    Yes! DropX is completely free to use. We believe BSC airdrop discovery should be accessible to everyone.
                   </p>
                 </div>
                 <div>
@@ -265,7 +265,7 @@ export const PricingPlans = () => {
               
               <div className="space-y-4">
                 <div>
-                  <h4 className="font-semibold mb-2">How does AsterDrop make money?</h4>
+                  <h4 className="font-semibold mb-2">How does DropX make money?</h4>
                   <p className="text-sm text-muted-foreground">
                     Currently, we're focused on building the best product. Monetization will come through optional premium services.
                   </p>

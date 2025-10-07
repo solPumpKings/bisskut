@@ -1,6 +1,6 @@
 # Extension File Placeholder
 
-This folder contains the AsterDrop browser extension file.
+This folder contains the DropX browser extension file.
 
 ## For Development:
 Place your `ext.zip` file in this directory for local testing.
