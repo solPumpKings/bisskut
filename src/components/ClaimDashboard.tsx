@@ -123,13 +123,13 @@ export const ClaimDashboard = () => {
           <LazyReveal delay={200}>
             <Card className="glass-card border-border h-full">
               <CardHeader className="flex flex-row items-center justify-between space-y-0 pb-2">
-                <CardTitle className="text-sm font-medium">Success Rate</CardTitle>
+                <CardTitle className="text-sm font-medium">Platform Status</CardTitle>
                 <TrendingUp className="h-4 w-4 text-primary" />
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">100%</div>
+                <div className="text-2xl font-bold">Operational</div>
                 <p className="text-xs text-muted-foreground">
-                  All claims successful
+                  All systems functioning normally
                 </p>
               </CardContent>
             </Card>

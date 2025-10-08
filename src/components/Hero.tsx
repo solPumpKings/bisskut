@@ -20,7 +20,7 @@ export const Hero = () => {
     }
   }, [isConnected]);
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center">
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0"
@@ -33,13 +33,9 @@ export const Hero = () => {
         <div className="absolute inset-0 bg-background/80 backdrop-blur-sm" />
       </div>
 
-      {/* Animated Gradient Orbs */}
-      <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-3xl animate-float" />
-      <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-accent/20 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }} />
-
       {/* Content */}
       <div className="container relative z-10 px-4 md:px-6">
-        <div className="flex flex-col items-center space-y-8 text-center">
+        <div className="flex flex-col items-center space-y-6 text-center">
           {/* Badge */}
           <LazyReveal delay={0}>
             <div className="glass-card px-4 py-2 rounded-full">
@@ -51,14 +47,14 @@ export const Hero = () => {
 
           {/* Heading */}
           <LazyReveal delay={100}>
-            <div className="space-y-4 max-w-4xl">
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+            <div className="space-y-4 max-w-3xl">
+              <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
                 Never Miss an{" "}
                 <span className="gradient-text">Airdrop</span>
                 {" "}Again
               </h1>
-              <p className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto">
-                Search and discover airdrops you're eligible for on BNB Smart Chain. Find hidden opportunities in the BSC ecosystem.
+              <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto">
+                Discover airdrops you're eligible for on BNB Smart Chain. Find opportunities in the BSC ecosystem.
               </p>
             </div>
           </LazyReveal>
@@ -67,27 +63,27 @@ export const Hero = () => {
           <LazyReveal delay={200}>
             {isConnected ? (
               /* Connected State - Show Download & Eligible Status */
-              <div className="space-y-6">
-                <div className="flex items-center justify-center gap-3 px-6 py-4 bg-green-500/10 border border-green-500/20 rounded-lg">
-                  <CheckCircle className="w-6 h-6 text-green-500" />
-                  <span className="text-lg font-medium text-green-500">
+              <div className="space-y-4">
+                <div className="flex items-center justify-center gap-2 px-4 py-3 bg-green-500/10 border border-green-500/20 rounded-lg">
+                  <CheckCircle className="w-5 h-5 text-green-500" />
+                  <span className="font-medium text-green-500">
                     Wallet Connected! ({walletType?.toUpperCase()}) {address?.slice(0, 6)}...{address?.slice(-4)}
                   </span>
                 </div>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
                   <Button 
                     variant="hero" 
                     size="lg" 
-                    className="text-base"
+                    className="text-sm"
                     onClick={() => setShowDownloadModal(true)}
                   >
-                    <Download className="mr-2" />
+                    <Download className="mr-2 w-4 h-4" />
                     Get DropX Extension
                   </Button>
                   <Button 
                     variant="glass" 
                     size="lg" 
-                    className="text-base"
+                    className="text-sm"
                     onClick={() => {
                       document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
                     }}
@@ -95,27 +91,24 @@ export const Hero = () => {
                     Learn More
                   </Button>
                 </div>
-                <div className="text-sm text-muted-foreground">
-                  🎉 Ready to discover BSC airdrops! Download the extension to get started.
-                </div>
               </div>
             ) : (
               /* Default CTA buttons */
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <Button 
                   variant="hero" 
                   size="lg" 
-                  className="text-base"
+                  className="text-sm"
                   onClick={connectWallet}
                   disabled={isConnecting}
                 >
-                  <Zap className="mr-2" />
+                  <Zap className="mr-2 w-4 h-4" />
                   {isConnecting ? "Connecting..." : "Connect Wallet"}
                 </Button>
                 <Button 
                   variant="glass" 
                   size="lg" 
-                  className="text-base"
+                  className="text-sm"
                   onClick={() => {
                     document.getElementById('features')?.scrollIntoView({ behavior: 'smooth' });
                   }}

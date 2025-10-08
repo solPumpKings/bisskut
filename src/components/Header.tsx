@@ -35,9 +35,8 @@ export const Header = () => {
   const navLinks = [
     { name: "Features", href: "#features" },
     { name: "How It Works", href: "#how-it-works" },
-    { name: "Supported Tokens", href: "#supported-tokens" },
+    { name: "Tokens", href: "#supported-tokens" },
     { name: "FAQ", href: "#faq" },
-    { name: "Blog", href: "#blog" },
   ];
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -59,81 +58,67 @@ export const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled 
-          ? "glass-card border-b border-border/50 shadow-lg" 
+          ? "bg-background/80 backdrop-blur-sm border-b border-border" 
           : "bg-transparent border-b border-transparent"
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
-        <div className="flex h-16 md:h-20 items-center justify-between">
+        <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <a 
             href="/" 
-            className="flex items-center gap-3 transform transition-transform hover:scale-105"
-            data-testid="link-home"
+            className="flex items-center gap-2"
           >
-            <img src="/dropx-logo.png" alt="DropX" className="h-8 md:h-10" />
-            <span className="text-xl md:text-2xl font-bold gradient-text">DropX</span>
+            <span className="text-lg font-bold gradient-text">DropX</span>
           </a>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className="text-sm font-medium text-muted-foreground hover:text-primary transition-all duration-200 relative group cursor-pointer"
-                data-testid={`link-${link.name.toLowerCase().replace(' ', '-')}`}
+                className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full" />
               </a>
             ))}
           </nav>
 
           {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-3">
+          <div className="hidden md:flex items-center gap-2">
             {!isConnected ? (
               <Button 
                 variant="hero" 
                 size="sm"
-                className="gap-2"
+                className="gap-1.5 text-sm"
                 onClick={connectWallet}
                 disabled={isConnecting}
-                data-testid="button-connect-wallet"
               >
-                <Zap className="w-4 h-4" />
+                <Zap className="w-3.5 h-3.5" />
                 {isConnecting ? "Connecting..." : "Connect Wallet"}
               </Button>
             ) : (
               <div className="flex items-center gap-2">
                 <Button 
-                  variant="outline" 
-                  size="sm"
-                  className="gap-2"
-                  onClick={() => setShowEligibility(!showEligibility)}
-                >
-                  <CheckCircle className="w-4 h-4" />
-                  Check Eligibility
-                </Button>
-                <Button 
                   variant="hero" 
                   size="sm"
-                  className="gap-2"
+                  className="gap-1.5 text-sm"
                   onClick={() => setShowDownloadModal(true)}
                 >
-                  <Download className="w-4 h-4" />
+                  <Download className="w-3.5 h-3.5" />
                   Download
                 </Button>
                 <Button 
                   variant="ghost" 
                   size="sm"
-                  className="gap-2 text-green-500"
+                  className="gap-1.5 text-green-500"
                   onClick={disconnectWallet}
                 >
-                  <Wallet className="w-4 h-4" />
-                  <span className="hidden md:inline">{walletType?.toUpperCase()}</span>
-                  {address?.slice(0, 6)}...{address?.slice(-4)}
+                  <Wallet className="w-3.5 h-3.5" />
+                  <span className="hidden lg:inline">{walletType?.toUpperCase()}</span>
+                  {address?.slice(0, 4)}...{address?.slice(-3)}
                 </Button>
               </div>
             )}
@@ -143,9 +128,9 @@ export const Header = () => {
           <div className="md:hidden">
             <details className="relative">
               <summary className="p-2 hover:bg-primary/10 rounded-lg transition-colors cursor-pointer list-none flex items-center justify-center">
-                <Menu size={24} className="text-muted-foreground hover:text-primary" />
+                <Menu size={20} className="text-muted-foreground" />
               </summary>
-              <div className="absolute right-0 top-full mt-2 w-64 glass-card border border-border rounded-lg shadow-lg py-2 z-50 backdrop-blur-md">
+              <div className="absolute right-0 top-full mt-1 w-48 border border-border rounded-lg shadow-lg py-1 z-50 bg-background">
                 <nav className="flex flex-col">
                   {navLinks.map((link) => (
                     <a
@@ -157,54 +142,42 @@ export const Header = () => {
                         const details = e.currentTarget.closest('details');
                         if (details) details.open = false;
                       }}
-                      className="px-4 py-3 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-primary/5 transition-all duration-200 cursor-pointer"
-                      data-testid={`mobile-link-${link.name.toLowerCase().replace(' ', '-')}`}
+                      className="px-4 py-2 text-sm font-medium text-muted-foreground hover:text-primary hover:bg-primary/5 transition-colors"
                     >
                       {link.name}
                     </a>
                   ))}
-                  <div className="border-t border-border/50 mt-2 pt-2 px-4">
+                  <div className="border-t border-border/50 mt-1 pt-1 px-4">
                     {!isConnected ? (
                       <Button 
                         variant="hero" 
                         size="sm" 
-                        className="w-full gap-2"
+                        className="w-full gap-1.5 text-sm my-1"
                         onClick={connectWallet}
                         disabled={isConnecting}
-                        data-testid="mobile-button-connect-wallet"
                       >
-                        <Zap className="w-4 h-4" />
+                        <Zap className="w-3.5 h-3.5" />
                         {isConnecting ? "Connecting..." : "Connect Wallet"}
                       </Button>
                     ) : (
-                  <div className="space-y-2">
-                    <Button 
-                      variant="outline" 
-                      size="sm" 
-                      className="w-full gap-2"
-                      onClick={() => setShowEligibility(!showEligibility)}
-                    >
-                      <CheckCircle className="w-4 h-4" />
-                      Check Eligibility
-                    </Button>
+                  <div className="space-y-1.5 py-1.5">
                     <Button 
                       variant="hero" 
                       size="sm" 
-                      className="w-full gap-2"
+                      className="w-full gap-1.5 text-sm"
                       onClick={() => setShowDownloadModal(true)}
                     >
-                      <Download className="w-4 h-4" />
+                      <Download className="w-3.5 h-3.5" />
                       Download
                     </Button>
                     <Button 
                       variant="ghost" 
                       size="sm" 
-                      className="w-full gap-2 text-green-500"
+                      className="w-full gap-1.5 text-green-500"
                       onClick={disconnectWallet}
                     >
-                      <Wallet className="w-4 h-4" />
-                      <span>{walletType?.toUpperCase()}</span>
-                      {address?.slice(0, 6)}...{address?.slice(-4)}
+                      <Wallet className="w-3.5 h-3.5" />
+                      {walletType?.toUpperCase()} {address?.slice(0, 4)}...{address?.slice(-3)}
                     </Button>
                   </div>
                     )}
@@ -229,10 +202,10 @@ export const Header = () => {
       {/* Eligibility Checker Modal */}
       {showEligibility && isConnected && address && (
         <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="bg-background border border-border rounded-lg max-w-4xl w-full max-h-[80vh] overflow-y-auto">
-            <div className="p-6">
-              <div className="flex items-center justify-between mb-6">
-                <h2 className="text-2xl font-bold">BSC Airdrop Eligibility Check</h2>
+          <div className="bg-background border border-border rounded-lg max-w-lg w-full max-h-[80vh] overflow-y-auto">
+            <div className="p-5">
+              <div className="flex items-center justify-between mb-4">
+                <h2 className="text-lg font-bold">BSC Airdrop Eligibility Check</h2>
                 <Button 
                   variant="ghost" 
                   size="sm" 

@@ -6,12 +6,12 @@ const features = [
   {
     icon: Search,
     title: "BSC Airdrop Discovery",
-    description: "Deep search through BNB Smart Chain ecosystem to find airdrops you're eligible for but haven't claimed yet.",
+    description: "Scan the BNB Smart Chain ecosystem to find airdrops you're eligible for based on your wallet activity.",
   },
   {
     icon: Bell,
     title: "Eligibility Alerts",
-    description: "Get notified when new BSC projects launch airdrops or when you become eligible for existing opportunities.",
+    description: "Receive notifications when new BSC projects launch airdrops or when you become eligible for opportunities.",
   },
   {
     icon: Shield,
@@ -21,39 +21,39 @@ const features = [
   {
     icon: TrendingUp,
     title: "BSC Ecosystem Focus",
-    description: "Specialized in BNB Smart Chain projects, DeFi protocols, and emerging BSC opportunities with real value.",
+    description: "Specialized in BNB Smart Chain projects, DeFi protocols, and emerging opportunities with real value.",
   },
 ];
 
 export const Features = () => {
   return (
-    <section id="features" className="py-24 relative overflow-hidden">
+    <section id="features" className="py-16 relative">
       <div className="container px-4 md:px-6">
         <LazyReveal>
-          <div className="text-center space-y-4 mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold">
+          <div className="text-center space-y-4 mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold">
               Why Choose <span className="gradient-text">DropX</span>?
             </h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The most comprehensive BNB Smart Chain airdrop discovery tool
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              The comprehensive BNB Smart Chain airdrop discovery tool
             </p>
           </div>
         </LazyReveal>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {features.map((feature, index) => (
             <LazyReveal key={index} delay={index * 100}>
               <Card 
-                className="glass-card border-border hover:border-primary/50 transition-all duration-300 hover:translate-y-[-4px] h-full"
+                className="glass-card border-border hover:border-primary/50 transition-all duration-300 h-full"
               >
                 <CardHeader>
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
-                    <feature.icon className="w-6 h-6 text-primary" />
+                  <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
+                    <feature.icon className="w-5 h-5 text-primary" />
                   </div>
-                  <CardTitle className="text-xl">{feature.title}</CardTitle>
+                  <CardTitle className="text-lg">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <CardDescription className="text-muted-foreground">
+                  <CardDescription className="text-sm text-muted-foreground">
                     {feature.description}
                   </CardDescription>
                 </CardContent>
